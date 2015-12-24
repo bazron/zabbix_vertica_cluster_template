@@ -67,7 +67,7 @@ conn_info = {'host': options.host,
              'database': options.database}
 
 # simple connection, with manual close
-connection = vertica_python.connect(conn_info)
+connection = vertica_python.connect(**conn_info)
 cur = connection.cursor()
 
 # find the right metric
