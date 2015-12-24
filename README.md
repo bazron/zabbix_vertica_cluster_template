@@ -3,6 +3,8 @@
 
 Vertica Cluster Template for Zabbix
 
+This template monitors the cluster as a whole, you should use it in conjunction with the per node monitoring
+
 1. install vertica-python (https://github.com/uber/vertica-python) - using pip: "pip install --pre pytz" and than "pip install vertica-python"
 2. place the script "vertica_stats.py" at the zabbix-server externalscripts folder (https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/external), make sure it has execute permission (Ubuntu - /usr/share/zabbix/externalscripts). 
 3. Import the template "Template_App_Vertica_Cluster.xml".
